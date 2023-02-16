@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+// ---====== Root ======---//
+
+$grey: #5f5f6e;
+
+* {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+//---====== Nav Part ======---//
+
+nav {
+    background-color: #1c1c24;
+    height: 80px;
+    border: 2px solid #2d2d3a;
+    z-index: 1000;
+    .container {
+        .row {
+            h5 {
+                font-weight: 500;
+                color: #fff;
+                line-height: 1.6;
+                cursor: pointer;
+            }
+            .logo {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #4447e2;
+                color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                i {
+                    padding: 6px;
+                }
+            }
+            .news,
+            .help {
+                cursor: pointer;
+                i {
+                    font-size: 24px;
+                    font-weight: normal;
+                    color: $grey;
+                }
+                span {
+                    font-size: 16px;
+                    color: $grey;
+                }
+            }
+            .task {
+                cursor: pointer;
+                i {
+                    font-size: 24px;
+                    font-weight: normal;
+                    color: #fff;
+                }
+                span {
+                    font-size: 16px;
+                    color: #fff;
+                }
+            }
+            .user {
+                .plus {
+                    width: 146px;
+                    height: 40px;
+                    background-color: black;
+                    border-radius: 15px;
+                    padding: 5px;
+                    cursor: pointer;
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        background: #4447e2;
+                        border-radius: 10px;
+                        .bx-plus {
+                            color: #fff;
+                            font-size: 17px;
+                            padding: 7px;
+                        }
+                    }
+                    .bxs-coin-stack {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                    span {
+                        color: #fff;
+                        font-size: 16px;
+                        padding: 4px 0;
+                    }
+                }
+                .user-logo {
+                    cursor: pointer;
+                    img {
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 14px 0 10px;
+                    }
+                    i {
+                        color: $grey;
+                        font-weight: bold;
+                        font-size: 26px;
+                    }
+                    .dropdown {
+                        ul {
+                            width: 255px;
+                            height: auto;
+                            background-color: #1c1c24;
+                            border: 2px solid #2d2d3a;
+                            border-radius: 15px;
+                            li {
+                                margin-top: 15px;
+                                .logout {
+                                    a {
+                                        i {
+                                            font-size: 24px;
+                                            font-weight: normal;
+                                            color: #e24444;
+                                        }
+                                        span {
+                                            font-size: 16px;
+                                            font-weight: 600;
+                                            color: #e24444;
+                                        }
+                                    }
+                                }
+                                .dropdown-item {
+                                    input {
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                        appearance: none;
+                                        -webkit-tap-highlight-color: transparent;
+                                        cursor: pointer;
+                                    }
+                                    input:focus {
+                                        outline: 0;
+                                    }
+                                    .toggle {
+                                        height: 24px;
+                                        width: 44px;
+                                        border-radius: 15px;
+                                        display: inline-block;
+                                        position: relative;
+                                        margin: 0;
+                                        background: #2d2d3a;
+                                        transition: all 0.2s ease;
+                                    }
+                                    .toggle:after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 3px;
+                                        left: 3px;
+                                        width: 18px;
+                                        height: 18px;
+                                        border-radius: 50%;
+                                        background: #4447e2;
+                                        transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+                                    }
+                                    .toggle:checked:after {
+                                        transform: translatex(20px);
+                                    }
+                                }
+                                i {
+                                    font-size: 24px;
+                                    font-weight: normal;
+                                    color: #fff;
+                                }
+                                span {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #fff;
+                                }
+                            }
+                            .line {
+                                width: 85%;
+                                height: 1px;
+                                background-color: #2d2d3a;
+                                margin: 22px auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//-- ====== Section Part ====== --//
+
+section {
+    background-color: rgba(19, 20, 25);
+    .container {
+        p {
+            font-size: 26px;
+            font-weight: bold;
+            color: #fff;
+            margin: 35px 0 35px 20px;
+        }
+        .task-btn {
+            right: 25px;
+            width: 132px;
+            height: 50px;
+            background: #2d2d3a;
+            border-radius: 15px;
+            border: 0;
+            margin: 30px 0;
+            cursor: pointer;
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                padding: 0 8px;
+            }
+        }
+
+        .row {
+            padding-bottom: 20px;
+            .col-lg-3 {
+                width: 290px;
+                height: 360px;
+                background-color: #1c1c24;
+                border-radius: 15px;
+                margin-bottom: 35px;
+                .empty {
+                    i {
+                        font-size: 80px;
+                        color: #343444;
+                    }
+                }
+                .empty-img {
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    i {
+                        font-size: 80px;
+                        color: #343444;
+                    }
+                }
+                .tran-logo {
+                    width: 250px;
+                    height: 50px;
+                    margin-bottom: 20px;
+                    .logo {
+                        position: relative;
+                        cursor: pointer;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        .icon {
+                            width: 1rem;
+                            height: 1rem;
+                            border-radius: 50%;
+                            background-color: #1c1c24;
+                            padding: 4px;
+                            position: absolute;
+                            bottom: 1px;
+                            right: 0;
+                            i {
+                                font-size: 8px;
+                                color: #e24444;
+                            }
+                            .anastasia {
+                                color: #50d86a;
+                            }
+                            .dwinawan {
+                                color: #a86ce4;
+                            }
+                            .anton {
+                                color: #ffa10b;
+                            }
+                        }
+                    }
+                    .tran-name {
+                        h1 {
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                        h3 {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #5f5f6e;
+                        }
+                    }
+                    .tran-dot {
+                        right: 0;
+                        i {
+                            width: 18px;
+                            height: 18px;
+                            color: #8e8e96;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .tran-item {
+                    width: 250px;
+                    height: 180px;
+                    margin: 0 auto;
+                    cursor: pointer;
+                }
+                .btn {
+                    width: 250px;
+                    height: 50px;
+                    background-color: #1c1c24;
+                    border: 2px solid #4447e2;
+                    border-radius: 15px;
+                    margin: 20px auto;
+                    font-size: 16px;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: #4447e2;
+                    }
+                }
+            }
+        }
+        .btn-up {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #2d2d3a;
+            bottom: 80px;
+            right: -65px;
+            cursor: pointer;
+            i {
+                font-size: 36px;
+                color: #4b4b62;
+            }
+        }
+    }
+}
+
+//-- ====== Footer Part ====== --//
+
+footer {
+    background-color: #1c1c24;
+    border-top: 2px solid #262631;
+    .container {
+        height: 80px;
+        .row {
+            width: 100%;
+            height: 100%;
+            .social {
+                height: 25px;
+                i {
+                    font-size: 28px;
+                    color: #5f5f6e;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+            }
+            .col-4 {
+                h2 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #5f5f6f;
+                }
+            }
+        }
+    }
+}

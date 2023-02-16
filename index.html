@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS Custom Link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Bootstrap CSS Online Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Bootstrap Icon Online Link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+  <!-- Boxicon Online Link -->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Fontawesome Online Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <title>Web Service</title>
+</head>
+
+<body>
+
+  <!--====== Nav Part ======-->
+
+  <nav class="d-flex align-items-center position-sticky top-0 z-">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col-lg-4 col-md-4 col-sm-6 d-flex">
+          <div class="logo me-2">
+            <i class='bx bx-trending-up'></i>
+          </div>
+          <h5>Pro-Promotion.com</h5>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-evenly align-items-center second-col">
+          <div class="task d-flex">
+            <a href="index.html" class="text-decoration-none d-flex active">
+              <i class='bx bxs-category'></i>
+              <span class="ms-2">Task List</span>
+            </a>
+          </div>
+
+          <div class="news d-flex ">
+            <a href="#" class="text-decoration-none d-flex active">
+              <i class='bx bxs-news'></i>
+              <span class="ms-2">News</span></a>
+          </div>
+
+          <div class="help d-flex">
+            <a href="#" class="text-decoration-none d-flex active">
+              <i class='bx bxs-help-circle'></i>
+              <span class="ms-2">Help</span></a>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 d-flex justify-content-end">
+          <div class="user d-flex">
+            <div class="plus d-flex">
+              <div class="icon me-2">
+                <i class='bx bx-plus'></i>
+              </div>
+
+              <i class='bx bxs-coin-stack p-2 ms-1'></i>
+              <span>2023</span>
+            </div>
+
+            <div class="user-logo">
+              <div class="dropdown">
+                <div class="d-flex align-items-center" id="dropdownMenu2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="img/user.png" alt="no photo">
+                  <i class='bx bx-chevron-down'></i>
+                </div>
+
+                <ul class="dropdown-menu mt-2" aria-labelledby="dropdownMenu2">
+                  <li>
+                    <div class="dropdown-item"><a class="text-decoration-none d-flex" href="profile.html">
+                        <i class='bx bxs-user'></i><span class="ps-2"> My profile</span></a>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="dropdown-item"><a class="text-decoration-none d-flex" href="#">
+                        <i class='bx bxs-category'></i><span class="ps-2"> Task history</span></a>
+                    </div>
+                  </li>
+
+                  <div class="line"></div>
+
+                  <li>
+                    <div class="dropdown-item d-flex">
+                      <i class='bx bxs-sun'></i>
+                      <span class="ps-2">Dark mode</span>
+                      <!-- Rounded switch -->
+                      <input type="checkbox" class="toggle ms-auto" checked>
+                    </div>
+                  </li>
+
+                  <div class="line"></div>
+
+                  <li>
+                    <div class="dropdown-item mb-2 logout"><a class="text-decoration-none d-flex" href="#">
+                        <i class='bx bx-log-in'></i><span class="ps-2">Log out</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="div" id="div"></div>
+  </nav>
+
+
+  <!--====== Section Part ======-->
+
+
+  <section>
+    <div class="container position-relative">
+
+      <div class="top d-flex position-relative">
+        <p>Task list</p>
+
+        <div class="btn task-btn d-flex position-absolute">
+          <span class="d-flex align-items-center">+ Create task</span>
+        </div>
+      </div>
+
+      <!------ First Row ------>
+      <div class="row d-flex justify-content-evenly">
+
+        <!-- First Card - Tran -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/tran.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Tran Mau Tri Tam</h1>
+              <h3>Like</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/tran-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Second Card - Anastasia -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/anastasia.png" alt="">
+              <div class="icon d-flex"><i class="bi bi-chat-left-dots-fill anastasia"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Anastasia</h1>
+              <h3>Comment</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/anastasia-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Third Card - Martin -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/martin.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Martin David</h1>
+              <h3>Like</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/martin-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Fourth Card - Dwinawan -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/dwinawan.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-user-friends dwinawan"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Dwinawan</h1>
+              <h3>Followers</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/dwinawan-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!------ Second Row ------>
+
+        <!-- First Card - Anton -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/anton.png" alt="">
+              <div class="icon d-flex"><i class="bi bi-eye-fill anton"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Anton Tkachev</h1>
+              <h3>Views</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/anton-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Second Card - Adam -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/adam.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-user-friends dwinawan"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Adam Anderson</h1>
+              <h3>Followers</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/adam-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Third Card - Taras -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/taras.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Taras Migulko</h1>
+              <h3>Like</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/taras-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Fourth Card - Brent -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/brent.png" alt="">
+              <div class="icon d-flex"><i class="bi bi-chat-left-dots-fill anastasia"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Brent Schoepf</h1>
+              <h3>Comment</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/bret-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!------ Third Row ------>
+
+        <!-- First Card - Dmitry -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/dmitry.png" alt="">
+              <div class="icon d-flex"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Dmitry Lauretsky</h1>
+              <h3>Like</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/dmitry-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Second Card - Outcrowd -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column">
+          <div class="tran-logo d-flex m-auto position-relative">
+            <div class="logo">
+              <img src="img/outcrowd.png" alt="">
+              <div class="icon d-flex"><i class="bi bi-chat-left-dots-fill anastasia"></i></div>
+            </div>
+            <div class="tran-name ms-2">
+              <h1>Outcrowd</h1>
+              <h3>Comment</h3>
+            </div>
+            <div class="tran-dot position-absolute top-0">
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="tran-item d-flex">
+            <img src="img/outcrowd-item.png" alt="">
+          </div>
+          <button type="button" class="btn btn-danger shadow">Perform a task</button>
+        </div>
+
+        <!-- Third Card - Empty -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column d-flex justify-content-center align-items-center">
+          <div class="empty"><i class="bi bi-image-fill"></i></div>
+        </div>
+
+        <!-- Fourth Card - Full Empty -->
+        <div class="col-lg-3 col-md-4 col-sm-6 d-flex flex-column justify-content-evenly position-relative">
+          <div class="empty-logo pt-4 ps-2 pb-1">
+            <img src="img/empty_logo.png" alt="">
+          </div>
+          <div class="empty-item m-auto">
+            <img src="img/empty_item.png" alt="">
+          </div>
+          <div class="empty-button m-auto pb-2">
+            <img src="img/empty_button.png" alt="">
+          </div>
+
+          <div class="empty-img position-absolute top-50">
+            <div class="empty"><i class="bi bi-image-fill"></i></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btn-up position-absolute" onclick="topFunction()" id="myBtn">
+        <i class='bx bx-chevrons-up p-2'></i>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--====== Footer Part ======-->
+
+
+  <footer>
+    <div class="container">
+      <div class="row d-flex justify-content-between align-content-center">
+        <div class="col-4 social d-flex align-items-center mt-2">
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-vk'></i>
+          <i class='bx bxl-telegram'></i>
+        </div>
+
+        <div class="col-4 text-center mt-2">
+          <h2>© 2020 - All Rights Lecensed</h2>
+        </div>
+
+        <div class="col-4 text-end mt-2">
+          <h2>For commercial inquiries</h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Bootstrap JS Online Link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Custom Link -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

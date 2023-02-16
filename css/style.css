@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+nav {
+  background-color: #1c1c24;
+  height: 80px;
+  border: 2px solid #2d2d3a;
+  z-index: 1000;
+}
+nav .container .row h5 {
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.6;
+  cursor: pointer;
+}
+nav .container .row .logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #4447e2;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+nav .container .row .logo i {
+  padding: 6px;
+}
+nav .container .row .news,
+nav .container .row .help {
+  cursor: pointer;
+}
+nav .container .row .news i,
+nav .container .row .help i {
+  font-size: 24px;
+  font-weight: normal;
+  color: #5f5f6e;
+}
+nav .container .row .news span,
+nav .container .row .help span {
+  font-size: 16px;
+  color: #5f5f6e;
+}
+nav .container .row .task {
+  cursor: pointer;
+}
+nav .container .row .task i {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+nav .container .row .task span {
+  font-size: 16px;
+  color: #fff;
+}
+nav .container .row .user .plus {
+  width: 146px;
+  height: 40px;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+nav .container .row .user .plus .icon {
+  width: 30px;
+  height: 30px;
+  background: #4447e2;
+  border-radius: 10px;
+}
+nav .container .row .user .plus .icon .bx-plus {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px;
+}
+nav .container .row .user .plus .bxs-coin-stack {
+  font-size: 16px;
+  color: #fff;
+}
+nav .container .row .user .plus span {
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 0;
+}
+nav .container .row .user .user-logo {
+  cursor: pointer;
+}
+nav .container .row .user .user-logo img {
+  width: 40px;
+  height: 40px;
+  margin: 0 14px 0 10px;
+}
+nav .container .row .user .user-logo i {
+  color: #5f5f6e;
+  font-weight: bold;
+  font-size: 26px;
+}
+nav .container .row .user .user-logo .dropdown ul {
+  width: 255px;
+  height: auto;
+  background-color: #1c1c24;
+  border: 2px solid #2d2d3a;
+  border-radius: 15px;
+}
+nav .container .row .user .user-logo .dropdown ul li {
+  margin-top: 15px;
+}
+nav .container .row .user .user-logo .dropdown ul li .logout a i {
+  font-size: 24px;
+  font-weight: normal;
+  color: #e24444;
+}
+nav .container .row .user .user-logo .dropdown ul li .logout a span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e24444;
+}
+nav .container .row .user .user-logo .dropdown ul li .dropdown-item input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+nav .container .row .user .user-logo .dropdown ul li .dropdown-item input:focus {
+  outline: 0;
+}
+nav .container .row .user .user-logo .dropdown ul li .dropdown-item .toggle {
+  height: 24px;
+  width: 44px;
+  border-radius: 15px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  background: #2d2d3a;
+  transition: all 0.2s ease;
+}
+nav .container .row .user .user-logo .dropdown ul li .dropdown-item .toggle:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4447e2;
+  transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+}
+nav .container .row .user .user-logo .dropdown ul li .dropdown-item .toggle:checked:after {
+  transform: translatex(20px);
+}
+nav .container .row .user .user-logo .dropdown ul li i {
+  font-size: 24px;
+  font-weight: normal;
+  color: #fff;
+}
+nav .container .row .user .user-logo .dropdown ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+nav .container .row .user .user-logo .dropdown ul .line {
+  width: 85%;
+  height: 1px;
+  background-color: #2d2d3a;
+  margin: 22px auto;
+}
+
+section {
+  background-color: #131419;
+}
+section .container p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  margin: 35px 0 35px 20px;
+}
+section .container .task-btn {
+  right: 25px;
+  width: 132px;
+  height: 50px;
+  background: #2d2d3a;
+  border-radius: 15px;
+  border: 0;
+  margin: 30px 0;
+  cursor: pointer;
+}
+section .container .task-btn span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0 8px;
+}
+section .container .row {
+  padding-bottom: 20px;
+}
+section .container .row .col-lg-3 {
+  width: 290px;
+  height: 360px;
+  background-color: #1c1c24;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+section .container .row .col-lg-3 .empty i {
+  font-size: 80px;
+  color: #343444;
+}
+section .container .row .col-lg-3 .empty-img {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .container .row .col-lg-3 .empty-img i {
+  font-size: 80px;
+  color: #343444;
+}
+section .container .row .col-lg-3 .tran-logo {
+  width: 250px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+section .container .row .col-lg-3 .tran-logo .logo {
+  position: relative;
+  cursor: pointer;
+}
+section .container .row .col-lg-3 .tran-logo .logo img {
+  width: 50px;
+  height: 50px;
+}
+section .container .row .col-lg-3 .tran-logo .logo .icon {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #1c1c24;
+  padding: 4px;
+  position: absolute;
+  bottom: 1px;
+  right: 0;
+}
+section .container .row .col-lg-3 .tran-logo .logo .icon i {
+  font-size: 8px;
+  color: #e24444;
+}
+section .container .row .col-lg-3 .tran-logo .logo .icon .anastasia {
+  color: #50d86a;
+}
+section .container .row .col-lg-3 .tran-logo .logo .icon .dwinawan {
+  color: #a86ce4;
+}
+section .container .row .col-lg-3 .tran-logo .logo .icon .anton {
+  color: #ffa10b;
+}
+section .container .row .col-lg-3 .tran-logo .tran-name h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+section .container .row .col-lg-3 .tran-logo .tran-name h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5f5f6e;
+}
+section .container .row .col-lg-3 .tran-logo .tran-dot {
+  right: 0;
+}
+section .container .row .col-lg-3 .tran-logo .tran-dot i {
+  width: 18px;
+  height: 18px;
+  color: #8e8e96;
+  cursor: pointer;
+}
+section .container .row .col-lg-3 .tran-item {
+  width: 250px;
+  height: 180px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+section .container .row .col-lg-3 .btn {
+  width: 250px;
+  height: 50px;
+  background-color: #1c1c24;
+  border: 2px solid #4447e2;
+  border-radius: 15px;
+  margin: 20px auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+section .container .row .col-lg-3 .btn:hover {
+  background-color: #4447e2;
+}
+section .container .btn-up {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2d2d3a;
+  bottom: 80px;
+  right: -65px;
+  cursor: pointer;
+}
+section .container .btn-up i {
+  font-size: 36px;
+  color: #4b4b62;
+}
+
+footer {
+  background-color: #1c1c24;
+  border-top: 2px solid #262631;
+}
+footer .container {
+  height: 80px;
+}
+footer .container .row {
+  width: 100%;
+  height: 100%;
+}
+footer .container .row .social {
+  height: 25px;
+}
+footer .container .row .social i {
+  font-size: 28px;
+  color: #5f5f6e;
+  margin-right: 20px;
+  cursor: pointer;
+}
+footer .container .row .col-4 h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #5f5f6f;
+}/*# sourceMappingURL=style.css.map */
